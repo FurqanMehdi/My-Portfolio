@@ -1,0 +1,114 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #69ea48; /* Light green background */
+  padding: 0.8rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 100px;
+}
+
+.navbar-logo img {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin-left: 2rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+  font-size: larger;
+  transition: color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 4px; /* space for underline */
+  border-bottom: 3px solid transparent;
+}
+
+.navbar-links li a:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Active link underline */
+.navbar-links li a.active {
+  border-bottom: 3px solid #fff; /* black underline */
+  color: #000;
+  font-weight: bolder;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust based on navbar height */
+    right: 0;
+    background-color: #69ea48;
+    width: 100%;
+    padding: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links-mobile li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .navbar-links-mobile li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, font-weight 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar-links-mobile li a:hover {
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  /* Active link underline on mobile */
+  .navbar-links-mobile li a.active {
+    border-bottom: 3px solid #fff;
+    color: #000;
+    font-weight: bolder;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
