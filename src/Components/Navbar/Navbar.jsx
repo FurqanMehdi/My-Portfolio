@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import Logo from '../Images/title.png';
+import Logo from '../Images/ChatGPT_Image_Nov_24__2025__06_39_02_PM-removebg-preview (1).png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
