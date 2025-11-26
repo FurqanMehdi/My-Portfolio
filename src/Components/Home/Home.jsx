@@ -12,6 +12,8 @@ const Home = () => {
         'UI/UX Designer',
         'Frontend Developer',
         'Backend Developer',
+        'MERN Stack Developer',
+        'Full Stack Developer',
         'Java Developer',
         'C++ Developer ',
         'SpringBoot Developer'
